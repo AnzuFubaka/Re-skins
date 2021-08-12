@@ -1,0 +1,493 @@
+print("Destroying M231 model")
+game.ReplicatedStorage.GunModels["M231"]:Destroy()
+
+print("Building new M231 model")
+local M231 = Instance.new("Model")
+M231.Name = "M231"
+M231.WorldPivot = CFrame.new(8700.5712890625, 4561.9819335938, 660.50122070313, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+
+local Bolt = Instance.new("MeshPart")
+Bolt.Name = "Bolt"
+Bolt.Anchored = true
+Bolt.CanCollide = false
+Bolt.Color = Color3.fromRGB(0, 255, 0)
+Bolt.Material = Enum.Material.Neon
+Bolt.Size = Vector3.new(1.0112128257751, 0.22350001335144, 0.28619819879532)
+Bolt.CFrame = CFrame.new(8699.7890625, 4562.3403320313, 660.45458984375)
+Bolt.Parent = M231
+
+local Trigger = Instance.new("Part")
+Trigger.Name = "Trigger"
+Trigger.Anchored = true
+Trigger.BottomSurface = Enum.SurfaceType.Smooth
+Trigger.CanCollide = false
+Trigger.TopSurface = Enum.SurfaceType.Smooth
+Trigger.Transparency = 1
+Trigger.Color = Color3.fromRGB(255, 255, 0)
+Trigger.Material = Enum.Material.SmoothPlastic
+Trigger.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+Trigger.CFrame = CFrame.new(8699.708984375, 4561.9497070313, 660.45458984375, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+Trigger.Parent = M231
+
+local SightMark = Instance.new("Part")
+SightMark.Name = "SightMark"
+SightMark.Anchored = true
+SightMark.BottomSurface = Enum.SurfaceType.Smooth
+SightMark.CanCollide = false
+SightMark.TopSurface = Enum.SurfaceType.Smooth
+SightMark.Transparency = 1
+SightMark.Color = Color3.fromRGB(255, 255, 0)
+SightMark.Material = Enum.Material.SmoothPlastic
+SightMark.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+SightMark.CFrame = CFrame.new(8701.6865234375, 4562.6572265625, 660.45458984375, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+SightMark.Parent = M231
+
+local Mesh = Instance.new("BlockMesh")
+Mesh.Scale = Vector3.new(0.0099999997764826, 0.0099999997764826, 1000)
+Mesh.Parent = SightMark
+
+local Mesh1 = Instance.new("BlockMesh")
+Mesh1.Offset = Vector3.new(0, 0, 1.5)
+Mesh1.Scale = Vector3.new(0.019999999552965, 0.019999999552965, 20)
+Mesh1.Parent = SightMark
+
+local Flame = Instance.new("Part")
+Flame.Name = "Flame"
+Flame.Anchored = true
+Flame.BottomSurface = Enum.SurfaceType.Smooth
+Flame.CanCollide = false
+Flame.TopSurface = Enum.SurfaceType.Smooth
+Flame.Transparency = 1
+Flame.Color = Color3.fromRGB(255, 255, 0)
+Flame.Material = Enum.Material.SmoothPlastic
+Flame.Size = Vector3.new(0.11943094432354, 0.10367684811354, 0.077440805733204)
+Flame.CFrame = CFrame.new(8702.4501953125, 4562.3061523438, 660.44995117188, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+Flame.Parent = M231
+
+local Fire = Instance.new("Sound")
+Fire.Name = "Fire"
+Fire.Parent = Flame
+
+local MenuNodes = Instance.new("Model")
+MenuNodes.Name = "MenuNodes"
+MenuNodes.WorldPivot = CFrame.new(8701.1494140625, 4562.2309570313, 660.50122070313, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+MenuNodes.Parent = M231
+
+local ViewportNode = Instance.new("Part")
+ViewportNode.Name = "ViewportNode"
+ViewportNode.Anchored = true
+ViewportNode.BottomSurface = Enum.SurfaceType.Smooth
+ViewportNode.CanCollide = false
+ViewportNode.TopSurface = Enum.SurfaceType.Smooth
+ViewportNode.Transparency = 1
+ViewportNode.Color = Color3.fromRGB(98, 37, 209)
+ViewportNode.Material = Enum.Material.SmoothPlastic
+ViewportNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+ViewportNode.CFrame = CFrame.new(8700.01171875, 4562.1401367188, 660.44329833984, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+ViewportNode.Parent = MenuNodes
+
+local MountNode = Instance.new("Part")
+MountNode.Name = "MountNode"
+MountNode.Anchored = true
+MountNode.BottomSurface = Enum.SurfaceType.Smooth
+MountNode.CanCollide = false
+MountNode.TopSurface = Enum.SurfaceType.Smooth
+MountNode.Transparency = 1
+MountNode.Color = Color3.fromRGB(98, 37, 209)
+MountNode.Material = Enum.Material.SmoothPlastic
+MountNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+MountNode.CFrame = CFrame.new(8699.890625, 4562.0903320313, 660.45458984375, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+MountNode.Parent = MenuNodes
+
+local IronNode = Instance.new("Part")
+IronNode.Name = "IronNode"
+IronNode.Anchored = true
+IronNode.BottomSurface = Enum.SurfaceType.Smooth
+IronNode.CanCollide = false
+IronNode.TopSurface = Enum.SurfaceType.Smooth
+IronNode.Transparency = 1
+IronNode.Color = Color3.fromRGB(98, 37, 209)
+IronNode.Material = Enum.Material.SmoothPlastic
+IronNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+IronNode.CFrame = CFrame.new(8701.3095703125, 4562.5708007813, 660.45458984375, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+IronNode.Parent = MenuNodes
+
+local LaserNode = Instance.new("Part")
+LaserNode.Name = "LaserNode"
+LaserNode.Anchored = true
+LaserNode.BottomSurface = Enum.SurfaceType.Smooth
+LaserNode.CanCollide = false
+LaserNode.TopSurface = Enum.SurfaceType.Smooth
+LaserNode.Transparency = 1
+LaserNode.Color = Color3.fromRGB(98, 37, 209)
+LaserNode.Material = Enum.Material.SmoothPlastic
+LaserNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+LaserNode.CFrame = CFrame.new(8700.98828125, 4562.2895507813, 660.72406005859, -4.3711388286738e-08, 0, -1, 1, -4.3711388286738e-08, -4.3711388286738e-08, -4.3711388286738e-08, -1, 1.9106854651647e-15)
+LaserNode.Parent = MenuNodes
+
+local OtherNode = Instance.new("Part")
+OtherNode.Name = "OtherNode"
+OtherNode.Anchored = true
+OtherNode.BottomSurface = Enum.SurfaceType.Smooth
+OtherNode.CanCollide = false
+OtherNode.TopSurface = Enum.SurfaceType.Smooth
+OtherNode.Transparency = 1
+OtherNode.Color = Color3.fromRGB(98, 37, 209)
+OtherNode.Material = Enum.Material.SmoothPlastic
+OtherNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+OtherNode.CFrame = CFrame.new(8701.158203125, 4562.02734375, 660.45404052734, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+OtherNode.Parent = MenuNodes
+
+local BarrelNode = Instance.new("Part")
+BarrelNode.Name = "BarrelNode"
+BarrelNode.Anchored = true
+BarrelNode.BottomSurface = Enum.SurfaceType.Smooth
+BarrelNode.CanCollide = false
+BarrelNode.TopSurface = Enum.SurfaceType.Smooth
+BarrelNode.Transparency = 1
+BarrelNode.Color = Color3.fromRGB(98, 37, 209)
+BarrelNode.Material = Enum.Material.SmoothPlastic
+BarrelNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+BarrelNode.CFrame = CFrame.new(8702.4091796875, 4562.2939453125, 660.45361328125, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+BarrelNode.Parent = MenuNodes
+
+local Mesh2 = Instance.new("SpecialMesh")
+Mesh2.Offset = Vector3.new(0, 0, -0.15000000596046)
+Mesh2.Scale = Vector3.new(0.40000000596046, 0.40000000596046, 1.3999999761581)
+Mesh2.MeshType = Enum.MeshType.Sphere
+Mesh2.Parent = BarrelNode
+
+local MenuNode = Instance.new("Part")
+MenuNode.Name = "MenuNode"
+MenuNode.Anchored = true
+MenuNode.BottomSurface = Enum.SurfaceType.Smooth
+MenuNode.CanCollide = false
+MenuNode.TopSurface = Enum.SurfaceType.Smooth
+MenuNode.Transparency = 1
+MenuNode.Color = Color3.fromRGB(98, 37, 209)
+MenuNode.Material = Enum.Material.SmoothPlastic
+MenuNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+MenuNode.CFrame = CFrame.new(8700.51171875, 4562.0434570313, 660.44329833984, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+MenuNode.Parent = MenuNodes
+
+local UnderbarrelNode = Instance.new("Part")
+UnderbarrelNode.Name = "UnderbarrelNode"
+UnderbarrelNode.Anchored = true
+UnderbarrelNode.BottomSurface = Enum.SurfaceType.Smooth
+UnderbarrelNode.CanCollide = false
+UnderbarrelNode.TopSurface = Enum.SurfaceType.Smooth
+UnderbarrelNode.Transparency = 1
+UnderbarrelNode.Color = Color3.fromRGB(98, 37, 209)
+UnderbarrelNode.Material = Enum.Material.SmoothPlastic
+UnderbarrelNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+UnderbarrelNode.CFrame = CFrame.new(8700.7880859375, 4562.02734375, 660.45404052734, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+UnderbarrelNode.Parent = MenuNodes
+
+local OpticsNode = Instance.new("Part")
+OpticsNode.Name = "OpticsNode"
+OpticsNode.Anchored = true
+OpticsNode.BottomSurface = Enum.SurfaceType.Smooth
+OpticsNode.CanCollide = false
+OpticsNode.TopSurface = Enum.SurfaceType.Smooth
+OpticsNode.Transparency = 1
+OpticsNode.Color = Color3.fromRGB(98, 37, 209)
+OpticsNode.Material = Enum.Material.SmoothPlastic
+OpticsNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+OpticsNode.CFrame = CFrame.new(8699.8896484375, 4562.5708007813, 660.45458984375, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+OpticsNode.Parent = MenuNodes
+
+local Mesh3 = Instance.new("BlockMesh")
+Mesh3.Offset = Vector3.new(0, -0.11800000071526, 0)
+Mesh3.Scale = Vector3.new(1, 0.0099999997764826, 1)
+Mesh3.Parent = OpticsNode
+
+local CharmNode = Instance.new("Part")
+CharmNode.Name = "CharmNode"
+CharmNode.Anchored = true
+CharmNode.BottomSurface = Enum.SurfaceType.Smooth
+CharmNode.CanCollide = false
+CharmNode.TopSurface = Enum.SurfaceType.Smooth
+CharmNode.Transparency = 1
+CharmNode.Color = Color3.fromRGB(91, 154, 76)
+CharmNode.Material = Enum.Material.SmoothPlastic
+CharmNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+CharmNode.CFrame = CFrame.new(8700.146484375, 4562.3481445313, 660.27844238281, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+CharmNode.Parent = MenuNodes
+
+local Mesh4 = Instance.new("SpecialMesh")
+Mesh4.Scale = Vector3.new(1, 0.5, 0.5)
+Mesh4.MeshType = Enum.MeshType.Cylinder
+Mesh4.Parent = CharmNode
+
+local MagNode = Instance.new("Part")
+MagNode.Name = "MagNode"
+MagNode.Anchored = true
+MagNode.BottomSurface = Enum.SurfaceType.Smooth
+MagNode.CanCollide = false
+MagNode.TopSurface = Enum.SurfaceType.Smooth
+MagNode.Transparency = 1
+MagNode.Color = Color3.fromRGB(98, 37, 209)
+MagNode.Material = Enum.Material.SmoothPlastic
+MagNode.Size = Vector3.new(0.20000000298023, 0.20000000298023, 0.20000000298023)
+MagNode.CFrame = CFrame.new(8700.0908203125, 4561.8911132813, 660.45458984375, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+MagNode.Parent = MenuNodes
+
+local Texture = Instance.new("Part")
+Texture.Name = "Texture"
+Texture.Anchored = true
+Texture.BottomSurface = Enum.SurfaceType.Smooth
+Texture.CanCollide = false
+Texture.TopSurface = Enum.SurfaceType.Smooth
+Texture.Transparency = 1
+Texture.Color = Color3.fromRGB(98, 37, 209)
+Texture.Material = Enum.Material.SmoothPlastic
+Texture.Size = Vector3.new(0.22999998927116, 0.29977494478226, 0.31511181592941)
+Texture.CFrame = CFrame.new(8700.087890625, 4561.9985351563, 660.47003173828, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+Texture.Parent = M231
+
+local Texture1 = Instance.new("Texture")
+Texture1.Face = Enum.NormalId.Left
+Texture1.Color3 = Color3.fromRGB(175, 175, 175)
+Texture1.Texture = "http://www.roblox.com/asset/?id=1617180748"
+Texture1.StudsPerTileV = 0.3
+Texture1.StudsPerTileU = 0.3
+Texture1.Parent = Texture
+
+local Texture2 = Instance.new("Part")
+Texture2.Name = "Texture2"
+Texture2.Anchored = true
+Texture2.BottomSurface = Enum.SurfaceType.Smooth
+Texture2.CanCollide = false
+Texture2.TopSurface = Enum.SurfaceType.Smooth
+Texture2.Transparency = 1
+Texture2.Color = Color3.fromRGB(98, 37, 209)
+Texture2.Material = Enum.Material.SmoothPlastic
+Texture2.Size = Vector3.new(0.17660887539387, 0.16676326096058, 0.21389396488667)
+Texture2.CFrame = CFrame.new(8699.720703125, 4562.1196289063, 660.46594238281, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+Texture2.Parent = M231
+
+local Texture3 = Instance.new("Texture")
+Texture3.Face = Enum.NormalId.Right
+Texture3.Texture = "http://www.roblox.com/asset/?id=5534371707"
+Texture3.StudsPerTileV = 0.2
+Texture3.StudsPerTileU = 0.2
+Texture3.Parent = Texture2
+
+local Handle = Instance.new("Part")
+Handle.Name = "Handle"
+Handle.CanCollide = false
+Handle.Size = Vector3.new(1.4691749811172, 0.771399974823, 0.66499996185303)
+Handle.CFrame = CFrame.new(8700.7412109375, 4562.4760742188, 660.46185302734, -4.3711388286738e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711388286738e-08)
+Handle.Parent = M231
+
+local Mesh5 = Instance.new("SpecialMesh")
+Mesh5.Scale = Vector3.new(0.30000001192093, 0.30000001192093, 0.30000001192093)
+Mesh5.MeshId = "rbxassetid://4623883825"
+Mesh5.TextureId = "rbxassetid://4623623260"
+Mesh5.MeshType = Enum.MeshType.FileMesh
+Mesh5.Parent = Handle
+
+local tail = Instance.new("Part")
+tail.Name = "tail"
+tail.Anchored = true
+tail.BottomSurface = Enum.SurfaceType.Smooth
+tail.CanCollide = false
+tail.TopSurface = Enum.SurfaceType.Smooth
+tail.Size = Vector3.new(0.34000000357628, 0.40000000596046, 0.80000001192093)
+tail.CFrame = CFrame.new(8700.0625, 4562.3466796875, 660.64788818359, -0.20189593732357, 0.16024231910706, -0.96620923280716, -0.8076758980751, 0.53076905012131, 0.25679549574852, 0.55398344993591, 0.83222991228104, 0.022263787686825)
+tail.Parent = M231
+
+local Mesh6 = Instance.new("SpecialMesh")
+Mesh6.Scale = Vector3.new(0.34000000357628, 0.20000000298023, 0.40000000596046)
+Mesh6.MeshId = "http://www.roblox.com/asset/?id=170939831"
+Mesh6.TextureId = "rbxassetid://677087825"
+Mesh6.MeshType = Enum.MeshType.FileMesh
+Mesh6.Parent = tail
+
+local TheBarrel = Instance.new("Part")
+TheBarrel.Name = "TheBarrel"
+TheBarrel.Anchored = true
+TheBarrel.BottomSurface = Enum.SurfaceType.Smooth
+TheBarrel.CanCollide = false
+TheBarrel.TopSurface = Enum.SurfaceType.Smooth
+TheBarrel.Color = Color3.fromRGB(0, 255, 0)
+TheBarrel.Material = Enum.Material.Metal
+TheBarrel.Reflectance = 0.1
+TheBarrel.Size = Vector3.new(0.34238502383232, 0.34238004684448, 1.2528203725815)
+TheBarrel.CFrame = CFrame.new(8701.111328125, 4562.2939453125, 660.45458984375, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+TheBarrel.Parent = M231
+
+local Mesh7 = Instance.new("SpecialMesh")
+Mesh7.MeshId = "rbxassetid://467228812"
+Mesh7.MeshType = Enum.MeshType.FileMesh
+Mesh7.Parent = TheBarrel
+
+local Slot1 = Instance.new("IntValue")
+Slot1.Name = "Slot1"
+Slot1.Parent = TheBarrel
+
+local Part = Instance.new("Part")
+Part.BottomSurface = Enum.SurfaceType.Smooth
+Part.TopSurface = Enum.SurfaceType.Smooth
+Part.Color = Color3.fromRGB(0, 255, 0)
+Part.Material = Enum.Material.Neon
+Part.Size = Vector3.new(0.25, 0.11213364452124, 2)
+Part.CFrame = CFrame.new(8702.357421875, 4562.2954101563, 660.45495605469)
+Part.Shape = Enum.PartType.Cylinder
+Part.Parent = M231
+
+local Part1 = Instance.new("Part")
+Part1.BottomSurface = Enum.SurfaceType.Smooth
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.Color = Color3.fromRGB(255, 0, 0)
+Part1.Material = Enum.Material.Neon
+Part1.Size = Vector3.new(0.1186044216156, 0.22369630634785, 2)
+Part1.CFrame = CFrame.new(8700.4296875, 4562.2783203125, 660.44293212891)
+Part1.Shape = Enum.PartType.Cylinder
+Part1.Parent = M231
+
+local Iron = Instance.new("Part")
+Iron.Name = "Iron"
+Iron.Anchored = true
+Iron.BottomSurface = Enum.SurfaceType.Smooth
+Iron.CanCollide = false
+Iron.TopSurface = Enum.SurfaceType.Smooth
+Iron.Transparency = 0.4
+Iron.Color = Color3.fromRGB(248, 248, 248)
+Iron.Material = Enum.Material.Neon
+Iron.Reflectance = 1
+Iron.Size = Vector3.new(0.12155649811029, 0.28447985649109, 1.0420820713043)
+Iron.CFrame = CFrame.new(8699.8505859375, 4562.5517578125, 660.45361328125, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+Iron.Parent = M231
+
+local Mesh8 = Instance.new("SpecialMesh")
+Mesh8.VertexColor = Vector3.new(0.5, 0.5, 0.5)
+Mesh8.MeshId = "rbxassetid://467229281"
+Mesh8.MeshType = Enum.MeshType.FileMesh
+Mesh8.Parent = Iron
+
+local Slot2 = Instance.new("IntValue")
+Slot2.Name = "Slot2"
+Slot2.Parent = Iron
+
+local Mag = Instance.new("Part")
+Mag.Name = "Mag"
+Mag.Anchored = true
+Mag.BottomSurface = Enum.SurfaceType.Smooth
+Mag.CanCollide = false
+Mag.TopSurface = Enum.SurfaceType.Smooth
+Mag.Color = Color3.fromRGB(0, 255, 0)
+Mag.Material = Enum.Material.Neon
+Mag.Size = Vector3.new(0.12425780296326, 1.0249028205872, 0.47074595093727)
+Mag.CFrame = CFrame.new(8700.169921875, 4561.7192382813, 660.45458984375, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+Mag.Parent = M231
+
+local Mesh9 = Instance.new("SpecialMesh")
+Mesh9.MeshId = "rbxassetid://453268228"
+Mesh9.MeshType = Enum.MeshType.FileMesh
+Mesh9.Parent = Mag
+
+local Slot11 = Instance.new("IntValue")
+Slot11.Name = "Slot1"
+Slot11.Parent = Mag
+
+local MeshPart = Instance.new("Part")
+MeshPart.Name = "MeshPart"
+MeshPart.Anchored = true
+MeshPart.BottomSurface = Enum.SurfaceType.Smooth
+MeshPart.CanCollide = false
+MeshPart.TopSurface = Enum.SurfaceType.Smooth
+MeshPart.Transparency = 0.4
+MeshPart.Color = Color3.fromRGB(248, 248, 248)
+MeshPart.Material = Enum.Material.Neon
+MeshPart.Reflectance = 1
+MeshPart.Size = Vector3.new(0.2521930038929, 0.63536018133163, 1.9919850826263)
+MeshPart.CFrame = CFrame.new(8699.3759765625, 4562.1254882813, 660.46960449219, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+MeshPart.Parent = M231
+
+local Mesh10 = Instance.new("SpecialMesh")
+Mesh10.MeshId = "rbxassetid://467230366"
+Mesh10.MeshType = Enum.MeshType.FileMesh
+Mesh10.Parent = MeshPart
+
+local MeshPart1 = Instance.new("Part")
+MeshPart1.Name = "MeshPart"
+MeshPart1.Anchored = true
+MeshPart1.BottomSurface = Enum.SurfaceType.Smooth
+MeshPart1.CanCollide = false
+MeshPart1.TopSurface = Enum.SurfaceType.Smooth
+MeshPart1.Transparency = 0.4
+MeshPart1.Color = Color3.fromRGB(248, 248, 248)
+MeshPart1.Material = Enum.Material.Neon
+MeshPart1.Reflectance = 1
+MeshPart1.Size = Vector3.new(0.15939401090145, 0.55275893211365, 0.45688810944557)
+MeshPart1.CFrame = CFrame.new(8699.408203125, 4561.7192382813, 660.45458984375, -4.3711388286738e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711388286738e-08)
+MeshPart1.Parent = M231
+
+local Mesh11 = Instance.new("SpecialMesh")
+Mesh11.MeshId = "rbxassetid://455696649"
+Mesh11.MeshType = Enum.MeshType.FileMesh
+Mesh11.Parent = MeshPart1
+
+local MeshPart2 = Instance.new("Part")
+MeshPart2.Name = "MeshPart"
+MeshPart2.Anchored = true
+MeshPart2.BottomSurface = Enum.SurfaceType.Smooth
+MeshPart2.CanCollide = false
+MeshPart2.TopSurface = Enum.SurfaceType.Smooth
+MeshPart2.Color = Color3.fromRGB(159, 243, 233)
+MeshPart2.Material = Enum.Material.Metal
+MeshPart2.Size = Vector3.new(0.96325695514679, 0.41724297404289, 0.20277105271816)
+MeshPart2.CFrame = CFrame.new(8699.896484375, 4562.0625, 660.45660400391)
+MeshPart2.Parent = M231
+
+local Mesh12 = Instance.new("SpecialMesh")
+Mesh12.MeshId = "rbxassetid://456395907"
+Mesh12.MeshType = Enum.MeshType.FileMesh
+Mesh12.Parent = MeshPart2
+
+local Part2 = Instance.new("Part")
+Part2.Anchored = true
+Part2.Color = Color3.fromRGB(0, 255, 255)
+Part2.Material = Enum.Material.Neon
+Part2.Size = Vector3.new(0.10393118113279, 3.1476640701294, 0.095832541584969)
+Part2.CFrame = CFrame.new(8700.8427734375, 4562.2939453125, 660.45349121094, -4.33839701941e-08, -1, -5.1087128971616e-10, -4.2547235068469e-08, -5.1086940233702e-10, -1, 1, -4.4038806379376e-08, -4.4875541505007e-08)
+Part2.Parent = M231
+
+local Mesh13 = Instance.new("CylinderMesh")
+Mesh13.Parent = Part2
+
+print("Finished building new model.")
+print("Injecting new M231 model.")
+M231.Parent = game.ReplicatedStorage.GunModels
+wait()
+print("Finished construction and injection of Cyber Cat M231 re-skin.")
+
+local CoreGui = game:GetService("StarterGui")
+local uhframe = Instance.new("Sound", game.Workspace)
+uhframe.uhframeId = "rbxassetid://6484812371"
+uhframe.Volume = 0.1
+uhframe.TimePosition = 14
+
+CoreGui:SetCore("SendNotification", {
+	Title = "ASkin // Model";
+	Text = "Replaced M231 model!";
+	Duration = 2;
+})
+
+uhframe:Play()
+local loopcount = 0
+while loopcount <= 30 do
+	uhframe.Volume = uhframe.Volume + 0.01
+	wait()
+	loopcount = loopcount + 1
+end
+wait(2)
+loopcount = 0
+while loopcount <= 3 do
+	uhframe.Volume = uhframe.Volume - 0.1
+	wait(0.2)
+	loopcount = loopcount + 1
+end
+uhframe:Stop()
+return M231
